@@ -53,7 +53,7 @@ export default function App() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
         <motion.div 
           style={{ scale: heroScale }}
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 z-0 will-change-transform transform-gpu"
         >
           <img 
             src={IMAGES[3]} 

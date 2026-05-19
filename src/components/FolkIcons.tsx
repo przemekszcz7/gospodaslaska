@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 export const FolkFlower = ({ className = "w-6 h-6" }: { className?: string }) => (
   <motion.svg 
     viewBox="0 0 100 100" 
-    className={className}
+    className={`${className} transform-gpu`}
     animate={{ scale: [1, 1.05, 1] }}
     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
   >

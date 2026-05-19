@@ -49,6 +49,7 @@
   }
 
   .wood-grain {
+    @apply pointer-events-none;
     background: repeating-linear-gradient(
       90deg,
       rgba(107, 58, 26, 0.03),
@@ -59,12 +60,12 @@
   }
 
   .embroidery-divider {
-    @apply h-2 w-full my-8 bg-repeat-x;
+    @apply h-2 w-full my-8 bg-repeat-x transform-gpu;
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='8' viewBox='0 0 24 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4l4-4 4 4-4 4-4-4zm12 0l4-4 4 4-4 4-4-4z' fill='%238B1A1A'/%3E%3Cpath d='M6 4l2-2 2 2-2 2-2-2zm12 0l2-2 2 2-2 2-2-2z' fill='%231A2A4A'/%3E%3C/svg%3E");
   }
 
   .parchment-card {
-    @apply bg-bg-section rounded-sm border-l-4 border-red shadow-lg shadow-brown/10 p-6 transition-all duration-300;
+    @apply bg-bg-section rounded-sm border-l-4 border-red shadow-lg shadow-brown/10 p-6 transition-all duration-300 transform-gpu;
   }
 
   .badge-tradition {
@@ -85,6 +86,7 @@
   bottom: 0;
   pointer-events: none;
   opacity: 0.03;
+  @apply transform-gpu;
   background-image: 
     linear-gradient(90deg, rgba(30, 18, 8, 0.1) 1px, transparent 1px),
     linear-gradient(180deg, rgba(30, 18, 8, 0.1) 1px, transparent 1px);
