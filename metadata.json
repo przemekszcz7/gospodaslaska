@@ -1,0 +1,6 @@
+{
+  "name": "Gospoda Śląska",
+  "description": "Domowe obiady i przyjęcia okolicznościowe w sercu Pszowa. Tradycyjna kuchnia śląska w wyjątkowym wydaniu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
